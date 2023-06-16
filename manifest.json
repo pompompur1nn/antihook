@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Antihook",
+  "version": "2.0",
+  "description": "Monitors requests to Discord webhooks and shows notifications",
+  "author": "pompompurin",
+  "permissions": [
+    "webRequest",
+    "notifications",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "icons": {
+    "48": "icon48.webp",
+    "96": "icon96.webp"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon16.webp",
+      "32": "icon32.webp"
+    },
+    "default_title": "Antihook"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{4f65211e-54ad-452d-808a-b0caa817e45e}"
+    }
+  }
+}
