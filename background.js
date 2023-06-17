@@ -9,9 +9,6 @@ browser.storage.local.get('requestCount', ({ requestCount: storedCount }) => {
   if (storedCount !== undefined) {
     requestCount = storedCount;
   }
-
-  // Show a notification with the request count
-  showStartNotification(requestCount);
 });
 
 function handleRequest(requestDetails) {
@@ -42,7 +39,7 @@ function handleRequest(requestDetails) {
       type: 'basic',
       iconUrl: browser.extension.getURL('icon48.webp'),
       title: 'Discord Webhook Request',
-      message: `The website ${websiteUrl} sent a request to a Discord webhook. The webhook URL has been copied `
+      message: `The website ${websiteUrl} sent a request to a Discord webhook. The webhook URL has been copied.`
     };
 
     // Show the notification
