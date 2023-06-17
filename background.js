@@ -14,7 +14,6 @@ browser.storage.local.get('requestCount', ({ requestCount: storedCount }) => {
   showStartNotification(requestCount);
 });
 
-// Function to handle incoming requests
 function handleRequest(requestDetails) {
   if (requestDetails.method === 'POST') {
     // Increment the request count
@@ -26,12 +25,24 @@ function handleRequest(requestDetails) {
     // Get the website's URL from the request
     const websiteUrl = requestDetails.originUrl || requestDetails.initiator || 'Unknown Website';
 
+    // Get the webhook link from the request
+    const webhookUrl = requestDetails.url;
+
+    // Write the webhook link to the clipboard
+    navigator.clipboard.writeText(webhookUrl)
+      .then(() => {
+        console.log('Webhook URL copied to clipboard.');
+      })
+      .catch(err => {
+        console.error('Failed to write to clipboard: ', err);
+      });
+
     // Customize the notification message with the website's URL
     const notificationOptions = {
       type: 'basic',
       iconUrl: browser.extension.getURL('icon48.webp'),
       title: 'Discord Webhook Request',
-      message: `The website ${websiteUrl} sent a request to a Discord webhook.`
+      message: `The website ${websiteUrl} sent a request to a Discord webhook. The webhook URL has been copied `
     };
 
     // Show the notification

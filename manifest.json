@@ -3,7 +3,7 @@
   "name": "Antihook",
   "version": "2.2",
   "description": "Monitors requests to Discord webhooks and shows notifications",
-  "author": "pompompurin",
+  "author": "pompompurin, leolionross",
   "permissions": [
     "webRequest",
     "notifications",
