@@ -8,7 +8,8 @@
     "webRequest",
     "notifications",
     "<all_urls>",
-    "storage"
+    "storage",
+    "clipboardWrite"
   ],
   "background": {
     "scripts": ["background.js"],
