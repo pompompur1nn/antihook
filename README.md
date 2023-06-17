@@ -8,3 +8,5 @@ shut the fuck up logan
 no
 
 wake up is the first of the month 🗣️🗣️🗣️🗣️🗣️🗣️🗣️🗣️🗣️🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥  
+
+oh my god shut up you stupid bitchass
