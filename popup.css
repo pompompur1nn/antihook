@@ -1,0 +1,14 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    width: 500px;
+}
+
+div{
+    color: white;
+    text-align: center;
+}
+
+#active{
+    color: lime;
+}

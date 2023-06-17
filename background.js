@@ -56,16 +56,3 @@ browser.webRequest.onBeforeRequest.addListener(
   { urls: ['https://discord.com/api/webhooks/*'] },
   []
 );
-
-// Function to show a notification with the request count when the extension starts
-function showStartNotification(count) {
-  const startNotificationOptions = {
-    type: 'basic',
-    iconUrl: browser.extension.getURL('icon48.webp'),
-    title: 'Antihook Extension',
-    message: `Congratulations! You have detected ${count} webhook requests!`
-  };
-
-  // Show the start notification
-  browser.notifications.create(startNotificationOptions);
-}
