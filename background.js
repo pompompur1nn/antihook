@@ -61,7 +61,10 @@ browser.webRequest.onBeforeRequest.addListener(
       'https://*.rocket.chat/hooks/*',
       'https://*.zulipchat.com/api/v1/external/zuliprcbot/api/v1/*',
       'https://api.ciscospark.com/v1/webhooks/incoming/*',
-      'https://api.twist.com/api/v3/integrations/webhooks/*/messages'
+      'https://api.twist.com/api/v3/integrations/webhooks/*/messages',
+      'https://api.flowdock.com/v1/flows/*/messages',
+      'https://3.basecamp.com/*/*/*/webhooks/*',
+      "https://api.clickup.com/api/v2/webhook/*"
     ]
   }
 );
