@@ -38,8 +38,8 @@ function handleRequest(requestDetails) {
     const notificationOptions = {
       type: 'basic',
       iconUrl: browser.extension.getURL('icon48.webp'),
-      title: 'Discord Webhook Request',
-      message: `The website ${websiteUrl} sent a request to a Discord webhook. The webhook URL has been copied.`
+      title: 'Webhook Request',
+      message: `The website ${websiteUrl} sent a request to a webhook. The webhook URL has been copied.`
     };
 
     // Show the notification
@@ -50,6 +50,11 @@ function handleRequest(requestDetails) {
 // Register webRequest listener
 browser.webRequest.onBeforeRequest.addListener(
   handleRequest,
-  { urls: ['https://discord.com/api/webhooks/*'] },
+  { 
+  urls: [
+    'https://discord.com/api/webhooks/*',
+    'https://hooks.slack.com/services/*',
+    'https://media.guilded.gg/webhooks/*'
+  ],
   []
 );
