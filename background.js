@@ -56,7 +56,8 @@ browser.webRequest.onBeforeRequest.addListener(
     'https://hooks.slack.com/services/*',
     'https://media.guilded.gg/webhooks/*',
     'https://*.webhook.office.com/*',
-    'https://api.flock.com/hooks/*'
+    'https://api.flock.com/hooks/*',
+    'https://*.cloud.mattermost.com/hooks/*
   ],
   []
 );
