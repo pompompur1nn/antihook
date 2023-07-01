@@ -63,4 +63,3 @@ browser.webRequest.onBeforeRequest.addListener(
     'https://api.ciscospark.com/v1/webhooks/incoming/*',
     'https://api.twist.com/api/v3/integrations/webhooks/*/messages'
   ],
-);
