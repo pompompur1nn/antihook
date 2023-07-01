@@ -55,7 +55,8 @@ browser.webRequest.onBeforeRequest.addListener(
     'https://discord.com/api/webhooks/*',
     'https://hooks.slack.com/services/*',
     'https://media.guilded.gg/webhooks/*',
-    'https://*.webhook.office.com/*'
+    'https://*.webhook.office.com/*',
+    'https://api.flocl.com/hooks/*"
   ],
   []
 );
