@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Antihook",
-  "version": "2.3b",
+  "version": "2.3",
   "description": "Monitors requests to Discord, Slack, Guilded, e.t.c. webhooks and shows notifications",
   "author": "pompompurin, leolionross",
   "permissions": [
