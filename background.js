@@ -54,7 +54,8 @@ browser.webRequest.onBeforeRequest.addListener(
   urls: [
     'https://discord.com/api/webhooks/*',
     'https://hooks.slack.com/services/*',
-    'https://media.guilded.gg/webhooks/*'
+    'https://media.guilded.gg/webhooks/*',
+    'https://*.webhook.office.com/*'
   ],
   []
 );
